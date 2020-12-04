@@ -1,16 +1,16 @@
 .feedBack {
     padding: 20px 50px;
+    /* background-color: #EFEBD8; */
 }
 
-/* h6 {
-    text-align: center;
-} */
 h6 {
     font-weight: bold;
+    color: #4C636C;
 }
 
 h4 {
     text-align: center;
+    color: #4C636C;
 }
 
 div.divider {
@@ -20,8 +20,10 @@ div.divider {
 p {
     font-family: poppins;
     size: 25px;
+    color: #4C636C;
 }
 
 li {
     font-family: poppins;
+    color: #4C636C;
 }
