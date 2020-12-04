@@ -2,8 +2,27 @@ nav {
     font-family: 'Poppins', sans-serif;
     font-size: 13px;
     font-weight: bold;
+    margin-left: 50px;
+    color: #4C636C;
+}
+ body {
+     font-family: 'Poppins', sans-serif;
+ }
+
+.nav-item {
+    text-align: center;
+    color: #4C636C;
 }
 
-.nav-item li {
+.secTitle {
+    font-size: 25px;
+}
+
+.centerText {
     text-align: center;
+    color: #4C636C;
+    background-color: #EFEBD8;
+    background-position: center;
+    background-size: cover;
+    align-content: center;
 }
