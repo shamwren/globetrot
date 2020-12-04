@@ -1,0 +1,27 @@
+.feedBack {
+    padding: 20px 50px;
+}
+
+/* h6 {
+    text-align: center;
+} */
+h6 {
+    font-weight: bold;
+}
+
+h4 {
+    text-align: center;
+}
+
+div.divider {
+    margin-bottom: 50px;
+}
+
+p {
+    font-family: poppins;
+    size: 25px;
+}
+
+li {
+    font-family: poppins;
+}
