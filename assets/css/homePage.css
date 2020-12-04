@@ -7,22 +7,29 @@ nav {
 }
  body {
      font-family: 'Poppins', sans-serif;
+     position: relative;
  }
 
 .nav-item {
-    text-align: center;
     color: #4C636C;
 }
 
-.secTitle {
+h1 {
+    text-align: center;
+    color: #4C636C;
     font-size: 25px;
+    vertical-align: middle;
 }
 
 .centerText {
     text-align: center;
     color: #4C636C;
-    background-color: #EFEBD8;
-    background-position: center;
-    background-size: cover;
     align-content: center;
+    padding: 10px;
+}
+
+.plotChart {
+    background-color: #EFEBD8;
+    background-size: cover;
+    width: 100%;
 }
