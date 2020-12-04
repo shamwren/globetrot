@@ -1,0 +1,35 @@
+nav {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 50px;
+    color: #4C636C;
+}
+ body {
+     font-family: 'Poppins', sans-serif;
+     position: relative;
+ }
+
+.nav-item {
+    color: #4C636C;
+}
+
+h1 {
+    text-align: center;
+    color: #4C636C;
+    font-size: 25px;
+    vertical-align: middle;
+}
+
+.centerText {
+    text-align: center;
+    color: #4C636C;
+    align-content: center;
+    padding: 10px;
+}
+
+.plotChart {
+    background-color: #EFEBD8;
+    background-size: cover;
+    width: 100%;
+}
