@@ -1,0 +1,9 @@
+nav {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.nav-item li {
+    text-align: center;
+}
