@@ -1,0 +1,85 @@
+nav {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.nav-item {
+    color: #4C636C;
+}
+
+ body {
+     font-family: 'Poppins', sans-serif;
+ }
+
+h1 {
+    font-weight: 600;
+    text-align: center;
+    color: #4C636C;
+    font-size: 25px;
+    margin: 0 auto;
+}
+
+.centerText {
+    color: #4C636C;
+    padding-top: 50px;
+    margin: 0 auto;
+    text-align: center;
+}
+div.header {
+    background-color: #EFEBD8;
+}
+div.plotChart {
+    background-color: #EFEBD8;
+    width: auto;
+    height: 825px;
+}
+
+div.plotImage {
+    display: flex;
+}
+
+img.plotImage {
+    margin: auto;
+    align-content: center;
+    height: 790px;
+    width: auto;
+    padding-top: 25px;
+}
+
+div.flow {
+    display: flex;
+}
+div.dashedRight {
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    border-right: 1px dashed lightgrey;
+}
+
+img.flow {
+    margin: auto;
+    align-content: center;
+    height: auto;
+    width: 400px;
+    z-index: 1;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+hr {
+    border-top: 1px dashed;
+    opacity: 0.2;
+}
+
+#mockup {
+    margin: 2.2rem;
+    max-width: 95%;
+    }
+
+@media screen and (max-width: 376px) {
+    #mockup {
+        padding: 0px; 
+    }
+}   
