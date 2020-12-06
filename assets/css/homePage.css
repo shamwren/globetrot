@@ -20,8 +20,9 @@ nav {
     border: none;
     outline: none;
     padding: 10px;
-    background-color: none;
+    background-color: #4C636C;
     display: none;
+    color: white;
 }
 
 /*KTs sec 5/6 */
