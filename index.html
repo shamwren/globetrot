@@ -2,8 +2,6 @@
 <html lang="en">
 
 <!--navbar-->
-<link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico">
-
 <nav id="scroll" class="navbar navbar-expand-lg navbar-light customNav">
   <a class="navbar-brand" href="index.html"><img height="100px" width="auto" src="assets/images/logo.png"></a>
 
@@ -14,7 +12,7 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item ">
+      <li class="nav-item">
         <a class="nav-link" href="#research">Research</a>
       </li>
       <li class="nav-item">
@@ -46,6 +44,7 @@
 
 
 <head>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- bootstrap stylesheet -->
@@ -57,26 +56,47 @@
   <script src="https://kit.fontawesome.com/938a18ead6.js" crossorigin="anonymous"></script>
   <!--poppins font-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,
-    400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600&display=swap" rel="stylesheet">
 </head>
 
-<!--start-->
-
 <body>
+  <!--top button-->
+  <button  onclick="topFunction()" type="button" class="btn btn-light" id="topButton" title="go to top">Top</button>
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("topButton");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+<!--start-->
   <div class="container-fluid globetrotPage">
     <!--1/2 andy-->
 
     <!--3/4 Michaela-->
 
     <!--5/6 plot/task flow katie-->
-    <div class="row header">
+    <div class="row align-items-center header">
       <div class="centerText">
         <h1 class="secTitle" id="taskFlow">Priority Plotting Chart</h1>
       </div>
     </div>
-    <div class="row plotChart" data-spy="scroll" data-target="#scroll" data-offset="0">
+    <div class="row justify-content-between plotChart">
       <div class="col-2 col-sm-2 col-md-2 col-lg-2">
       </div>
       <div class="col-8 col-sm-8 col-md-8 col-lg-8">
@@ -88,18 +108,18 @@
       </div>
     </div>
 
-    <div class="row center">
+    <div class="row align-items-center justify-content-between center">
       <div class="centerText">
         <h1 class="secTitle">Task Flow Chart</h1>
       </div>
     </div>
 
-    <div class="row taskFlow1">
+    <div class="row align-items-center justify-content-between taskFlow1">
       <div class="col-3 col-sm-3 col-md-3 col-lg-3">
       </div>
       <div class="col-6 col-sm-6 col-md-6 col-lg-6">
         <div class="flow mx-auto">
-          <img class="flow" src="assets/images/taskFlow1.svg">
+          <img class="flow img-fluid" src="assets/images/taskFlow1.svg">
         </div>
       </div>
       <div class="col-3 col-sm-3 col-md-3 col-lg-3">
@@ -107,29 +127,29 @@
     </div>
     <hr class="divider">
 
-    <div class="row taskFlow2">
+    <div class="row align-items-center taskFlow2">
       <div class="col-xs-6 col-md-6 col-lg-6">
         <div class="flow dashedRight">
-          <img class="flow" src="assets/images/taskFlow2.svg">
+          <img class="flow img-fluid" src="assets/images/taskFlow2.svg">
         </div>
       </div>
       <div class="col-xs-6 col-md-6 col-lg-6">
         <div class="flow">
-          <img class="flow" src="assets/images/taskFlow3.png">
+          <img class="flow img-fluid" src="assets/images/taskFlow3.svg">
         </div>
       </div>
     </div>
     <hr class="divider">
 
-    <div class="row taskFlow3">
+    <div class="row align-items-center taskFlow3">
         <div class="col-xs-6 col-md-6 col-lg-6">
           <div class="flow dashedRight">
-            <img class="flow" src="assets/images/taskFlow4.svg">
+            <img class="flow img-fluid" src="assets/images/taskFlow4.svg">
           </div>
         </div>
         <div class="col-xs-6 col-md-6 col-lg-6">
           <div class="flow">
-            <img class="flow" src="assets/images/taskFlow5.svg">
+            <img class="flow img-fluid" src="assets/images/taskFlow5.svg">
           </div>
        </div>
     </div>
@@ -138,23 +158,31 @@
       <!--7/8 gordon-->
 
       <!--9/10 Victor-->
+      <div id="userFlow" class="row" >
+        <div id="mockup"  class="col-xs-12 col-md-12 col-lg-12" >
+            <img src="assets/images/appuserflow.png" class="img-fluid" alt="Responsive image">
+        </div>
+    </div>
+
+    <hr class="divider">
       <div id="styleGuide" class="row" >
         <div id="mockup"  class="col-xs-12 col-md-12 col-lg-12" >
             <img src="assets/images/Styleguide.png" class="img-fluid" alt="Responsive image">
             <img src="assets/images/Styleguidedetails.png" class="img-fluid" alt="Responsive image">
         </div>
     </div>
+    
    
       <!--11/12 edlyn-->
 
-      <div class="container hifiPrototypes">
+      <div id="prototype" class="container hifiPrototypes">
         <h4 style="font-family: poppins;">Hi-Fi Prototypes</h4>
         <div class="divider"></div>
           <img src="assets/images/hifiPrototypes.jpg" alt="" width="100%">
         <div class="divider"></div>
         </div>
 
-        <div class="container feedBack">
+        <div id="feedback" class="container feedBack">
   
           <h4 style="font-family: poppins;">Feedback</h4>
           <div class="divider"></div>
@@ -267,12 +295,55 @@
         </div>
         
         </div>
-
-
+<div id="role" class="container-fluid text-center">
+  <h1>Role and Responsibility</h1><br>
+        <div class="row">
+          <div class="col-md-4 col-lg-4 text-center" >
+            <a href="" target="_blank"><img class="rounded-circle" width="250" height="250" alt="100x100"  src="assets/images/Squarephoto.png"
+            data-holder-rendered="true"></a>
+            <h5 class="my-3 h5">name</h5>
+            <ul class="text-left">Role and Responsibility</ul>
+           </div>
+           <div class="col-md-4 col-lg-4" >
+            <a href="" target="_blank"></a><img class="rounded-circle" width="250" height="250" alt="100x100"  src="assets/images/Squarephoto.png"
+            data-holder-rendered="true"> 
+            <h5 class="my-3 h5">name</h5>
+            <ul class="text-left">Role and Responsibility</ul>
+           </div>
+           <div class="col-md-4 col-lg-4" >
+            <a href="" target="_blank"></a><img class="rounded-circle" width="250" height="250" alt="100x100"  src="assets/images/Squarephoto.png"
+            data-holder-rendered="true"> 
+            <h5 class="my-3 h5">name</h5>
+            <ul class="text-left">Role and Responsibility</ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-lg-4 text-center" >
+            <a href="" target="_blank"></a><img class="rounded-circle" width="250" height="250" alt="100x100"  src="assets/images/Squarephoto.png"
+            data-holder-rendered="true">  
+            <h5 class="my-3 h5">name</h5>
+            <ul class="text-left">Role and Responsibility</ul>
+           </div>
+           <div class="col-md-4 col-lg-4" >
+            <a href="" target="_blank"></a><img class="rounded-circle" width="250" height="250" alt="100x100"  src="assets/images/Squarephoto.png"
+            data-holder-rendered="true"> 
+            <h5 class="my-3 h5">name</h5>
+            <ul class="text-left">Role and Responsibility</ul>
+           </div>
+           <div class="col-md-4 col-lg-4" >
+            <a href="https://victortsui.github.io" target="_blank"><img class="rounded-circle" width="250" height="250" alt="100x100"  src="assets/images/victor.png"
+              data-holder-rendered="true"></a>
+              <h5 class="my-3 h5">Victor</h5>
+              <ul class="text-left">Created the App User flow, Styleguide and role and responsibility section .</ul>
+          </div>
+        </div>
+         
+  
 
       <!--end-->
-    </div>
+</div>
 </body>
+    </div>
 
 <!-- boostrap script -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -280,5 +351,21 @@
   integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
   integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+<!--smooth scroll-->
+  <script>           
+    $("#navbarSupportedContent a").on('click', function (event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function () {
+                window.location.hash = hash;
+            });
+        }
+    });
+</script>
 
+
+</body>
 </html>

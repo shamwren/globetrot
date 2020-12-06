@@ -1,3 +1,4 @@
+
 nav {
     font-family: 'Poppins', sans-serif;
     font-size: 13px;
@@ -9,8 +10,24 @@ nav {
     color: #4C636C;
 }
 
+#topButton {
+    font-family:'Poppins', sans-serif;
+    font-size: 15px;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: none;
+    display: none;
+}
+
+/*KTs sec 5/6 */
  body {
      font-family: 'Poppins', sans-serif;
+     position: relative;
  }
 
 h1 {
@@ -29,6 +46,8 @@ h1 {
 }
 div.header {
     background-color: #EFEBD8;
+    background-position: center;
+    background-size: cover;
 }
 div.plotChart {
     background-color: #EFEBD8;
@@ -72,15 +91,27 @@ hr {
     border-top: 1px dashed;
     opacity: 0.2;
 }
+/* Sectiion 09/10*/
+
+
 
 #mockup {
     margin: 2.2rem;
     max-width: 95%;
     }
 
+#role {
+    color: #4C636C;
+}
+
+
+
 @media screen and (max-width: 376px) {
     #mockup {
         padding: 0px; 
+    }
+    #role {
+        text-align: center;
     }
 }   
 
@@ -105,13 +136,13 @@ div.divider {
 }
 
 p {
-    font-family: poppins;
+    font-family: 'Poppins', sans-serif;
     size: 25px;
     color: #4C636C;
 }
 
 li {
-    font-family: poppins;
+    font-family: 'Poppins', sans-serif;
     color: #4C636C;
     
 }
