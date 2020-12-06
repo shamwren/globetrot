@@ -72,12 +72,19 @@ hr {
     border-top: 1px dashed;
     opacity: 0.2;
 }
-/* Sectiion 11/12 */
+/* Sectiion 09/10*/
 #mockup {
     margin: 2.2rem;
     max-width: 95%;
     }
 
+#role {
+    color: #4C636C;
+}
+
+ul {
+    text-align: center ;
+}
 @media screen and (max-width: 376px) {
     #mockup {
         padding: 0px; 
