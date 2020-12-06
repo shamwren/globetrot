@@ -1,3 +1,4 @@
+
 nav {
     font-family: 'Poppins', sans-serif;
     font-size: 13px;
@@ -9,8 +10,10 @@ nav {
     color: #4C636C;
 }
 
+/*KTs sec 5/6 */
  body {
      font-family: 'Poppins', sans-serif;
+     position: relative;
  }
 
 h1 {
@@ -29,6 +32,8 @@ h1 {
 }
 div.header {
     background-color: #EFEBD8;
+    background-position: center;
+    background-size: cover;
 }
 div.plotChart {
     background-color: #EFEBD8;
@@ -72,6 +77,8 @@ hr {
     border-top: 1px dashed;
     opacity: 0.2;
 }
+
+
 
 #mockup {
     margin: 2.2rem;
