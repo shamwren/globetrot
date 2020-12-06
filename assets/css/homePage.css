@@ -20,10 +20,14 @@ nav {
     border: none;
     outline: none;
     padding: 10px;
-    background-color: none;
+    background-color: #4C636C;
     display: none;
+    color: white;
 }
 
+#role {
+   padding: 70px;
+}
 /*KTs sec 5/6 */
  body {
      font-family: 'Poppins', sans-serif;
@@ -91,6 +95,10 @@ hr {
     border-top: 1px dashed;
     opacity: 0.2;
 }
+
+.flow {
+    padding: 15px;
+}
 /* Sectiion 09/10*/
 
 
@@ -144,5 +152,5 @@ p {
 li {
     font-family: 'Poppins', sans-serif;
     color: #4C636C;
-    
+    font-size: 12px;
 }
