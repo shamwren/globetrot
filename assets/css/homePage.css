@@ -1,4 +1,6 @@
-
+html {
+    scroll-behavior: smooth;
+}
 nav {
     font-family: 'Poppins', sans-serif;
     font-size: 5.48vh;
@@ -86,10 +88,10 @@ img.flow {
     margin: auto;
     align-content: center;
     height: auto;
-    width: 80%;
+    width: 100%;
     z-index: 1;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 hr {
@@ -100,9 +102,17 @@ hr {
 .flow {
     padding: 15px;
 }
+
+/*media queries breakpoint*/
+/* Extra small devices (phones, 576px and down) */
+@media only screen and (max-width: 768px) {
+    div.dashedRight {
+        border-right: 0px dashed lightgrey;
+        border-bottom: 1px dashed lightgrey;
+    }
+}
+
 /* Sectiion 09/10*/
-
-
 
 #mockup {
     margin: 2.2rem;
